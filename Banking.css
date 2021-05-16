@@ -1,0 +1,252 @@
+
+* {
+    box-sizing: border-box;
+  }
+html 
+{
+  font-family: "Lucida Sans", sans-serif;
+}
+
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  
+  .header {
+    background: rgb(0, 67, 109);
+    color: #ffffff;
+    content: icon ;
+  
+  }
+  .logo
+  {
+      height: 100px;
+      float: left;
+      position: relative;
+      padding-right: 15px;
+  }
+
+/* Amount Transation */
+  .tran
+  {
+    width: 100%;
+    text-align: center;
+  }
+  .tranin, .tranbtn, .tranin
+  {
+    text-align: center;
+    border-radius: 10px;
+    font-size:large;
+    font-weight: bolder;
+    color: darkslategrey;
+    height: 30px;
+    width: 75%;
+    background-color: lightblue;
+}
+  .tranbtn
+  {
+    background: rgb(0, 67, 109);
+    color: lightcyan;
+    cursor: pointer;
+    border-color: lightblue;
+  }
+  .tranbtn:hover
+  {
+    background: rgb(11, 113, 177);
+  }
+  .tranbtn:active
+  {
+    border-color: darkblue;
+  }
+
+  .tranin>option
+  {
+    text-align: center;
+    font-weight: normal;
+    color: black;
+  }
+
+
+  .aside {
+    background-color:rgba(114, 173, 180, 0.9);
+    padding: 15px;
+    color: black;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  /* Available Balance */
+.bal td{
+
+  margin-top: 50px;
+  width: 100%;
+  text-align: left;
+
+}
+.bal td:first-child
+{
+  text-align: center;
+}
+.bal
+{
+  border-collapse: collapse;
+}
+.col-2
+{
+  background-color:rgba(114, 173, 180, 0.9);
+  margin-top: 17px;
+  
+ 
+}
+
+.footer {
+  background:rgb(0, 67, 109);
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+  }
+  /* For desktop: */
+  .col-1 {width: 20%;}
+  .col-2 {width: 22%;}
+  .col-3 {width: 28%;}
+  
+  table{
+    width: 100%;
+    text-align: justify;
+  }
+
+  
+
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+    .logo
+  {
+      height: 100px;
+  
+  }
+  .header {
+    background: rgb(0, 67, 109);
+    color: #ffffff;
+    padding: 1px 5px 30px 5px;
+    height: fit-content;
+    text-shadow: 5px 5px 15px5px;
+  }
+}
+
+.black_overlay {
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1001;
+    -moz-opacity: 0.8;
+    opacity: .80;
+    filter: alpha(opacity=80);
+    -webkit-filter: alpha(opacity=80);
+}
+  .white_content {
+    display: none;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 25%;
+    height: 25%;
+    padding: 16px;
+    border: 16px solid orange;
+    background-color: white;
+    color: black;
+    z-index: 1002;
+    overflow: auto;
+  }
+  /* Collapse */
+  .collapsible {
+    background-image: linear-gradient(dodgerblue, rgb(0,0,60));
+    float: right;
+    cursor: pointer;
+    margin-right: 30px;
+    padding: 10px;
+    height: 5%;
+    width: fit-content;
+    border: none;
+    border-radius: 10px;
+    color: whitesmoke;
+    outline: none;
+    font-size: 15px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+  .navbar{
+    background:rgb(0, 67, 109);
+    width: 100%;
+    overflow: auto;
+    height: 90px;
+  
+  }
+  .navbar .name{
+    color: white;
+    font-size: 25px;
+    line-height: 80px;
+    margin-left: 50px;
+    cursor: pointer;
+  }
+  .navbar li {
+    
+    list-style: none;
+    display: inline-block;
+    padding: 12px;
+    border-radius: 10px;
+  
+  
+  }
+  .navbar ul{
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+  
+  }
+  .navbar li a {
+  
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px;
+   
+  
+  
+  }
+  .navbar ul li:hover{
+   /* background-color:   #1470b691; */
+   /* text-decoration: underline; */
+   /* transition: 0.3s; */
+   color: crimson;
+   
+  }
+  .navbar ul li a:hover{
+    /* background-color:   #1470b691; */
+    /* text-decoration: underline; */
+    /* transition: 0.3s; */
+    color: yellow;
+    
+   }
+  

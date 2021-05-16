@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registration Form</title>
+	<link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+
+</head>
+<body background="bg.png">
+  
+ 
+<form onsubmit = "return validate()" action="Signin.html">
+<div class="wrapper">
+    <div class="title">
+      Sign Up
+    </div>
+    <div class="form">
+       <div class="inputfield">
+          <label>First Name</label>
+          
+          <input type="text" class="input" id="fname">
+          <span id="fmsg" style="color: white" >*</span>
+       </div>  
+        <div class="inputfield">
+          <label>Last Name</label>
+          <input type="text" class="input" id="lname">
+          <span id="lmsg" style="color:white" ></span>
+       </div>  
+       <div class="inputfield">
+          <label>Password</label>
+          <input type="password" class="input" id="pass">
+          <span id="psmsg" style="color:white" > *</span>
+       </div>  
+      <div class="inputfield">
+          <label>Confirm Password</label>
+          <input type="password" class="input" id="cpass">
+          <span id="cmsg" style="color: white" >*</span>
+       </div> 
+        <div class="inputfield">
+          <label>Gender *</label>
+          
+          <div class="custom_select">
+            <input type="radio" name="gender" value="Male"><label   class="gender" > Male </label>
+            <input type="radio" name="gender" value=" Female"><label   class="gender"> Female </label>
+            <input type="radio" name="gender" value="Others"><label   class="gender"> Others </label>
+            <span id="gend" style="color: white" > </span>
+          </div>
+       </div> 
+        <div class="inputfield">
+          <label>Email Address</label>
+          <input type="email" class="input" id="email" >
+          <span id="emsg" style="color: white" > *</span>
+       </div> 
+      <div class="inputfield">
+          <label>Phone Number</label>
+          <input type="text" class="input" id="phone">
+          <span id="pmsg" style="color: white" > *</span>
+       </div> 
+      <div class="inputfield">
+          <label>City</label>
+          <input type="text" class="textarea">
+       </div> 
+      <div class="inputfield">
+          <label>State</label>
+          <input type="text" class="input">
+       </div> 
+      <div class="inputfield">
+          <input type="submit" value="Create" class="btn1">
+
+        <input type="reset" value="Reset" class="btn2" >
+
+      </div>
+      <div class="Signinpage">
+        <span>
+          Already a member? 
+        </span>
+        <a href="Signin.html" id="signin"><acronym title="Yes, Go to Sign-In Page">Sign-In</acronym></a>
+      </div>
+    </div>
+</div>	
+</form>
+
+</body>
+</html>

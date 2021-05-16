@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-In</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="signin.js"></script>
+
+</head>
+<body background="bg.png">
+    
+<div class="wrapper">
+    <div class="title">
+        Sign In
+    </div>
+    <form  onsubmit = "return login()" action="Banking.html">
+    <div class="form" >
+        <div class="inputfield">
+            <label>Username</label>
+            <input type="text" class="input" id="un">
+            <span id="err" style="color: white" > *</span>
+         </div> 
+         <div class="inputfield">
+            <label>Password</label>
+            <input type="password" class="input" id="pass">
+            <span id="err" style="color:white" > *</span>
+          
+            
+         </div>
+
+
+        <div class="inputfield">
+            
+          <input type="submit" value="Sign In" class="btn1" id="sign" >
+          <input type="reset" value="Reset" class="btn2" id="cancel">
+          
+            
+         </div>
+         </form>
+
+         
+    </div>
+</div>
+
+    
+</body>
+</html>
+
+    
